@@ -88,13 +88,25 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+          <tr onmouseout="asap_stop()" onmouseover="asap_start()">
+            <td style="padding-left:20px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/ASAPNet.png' width="130%">
+                <div class="two" id='asap_image'>
+                  <img src='images/asap_after.png' width="160"></div>
+                <img src='images/asap_before.png' width="160">
               </div>
+              <script type="text/javascript">
+                function asap_start() {
+                  document.getElementById('asap_image').style.opacity = "1";
+                }
+
+                function asap_stop() {
+                  document.getElementById('asap_image').style.opacity = "0";
+                }
+                asap_stop()
+              </script>
             </td>
-			<td style="padding-top:20px;width:60%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://tamarott.github.io/ASAPNet_web/">
                 <papertitle>Spatially-Adaptive Pixelwise Networks for Fast Image Translation</papertitle>
               </a>
@@ -109,20 +121,28 @@
               <br>
               <a href="https://tamarott.github.io/ASAPNet_web/">project page</a> /
               <a href="https://arxiv.org/pdf/2012.02992.pdf">arXiv</a>
-              <p>
-			  </p>
             </td>
           </tr>
 		  
-		  <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+		  <tr onmouseout="singan_stop()" onmouseover="singan_start()">
+            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:middle">
               <div class="one">
-			  <br>
-			  <br>
-                <img src='images/SinGAN.png' width="130%">
+                <div class="two" id='singan_image'>
+                  <img src='images/singan_after.png' width="160"></div>
+                <img src='images/singan_before.png' width="160">
               </div>
+              <script type="text/javascript">
+                function singan_start() {
+                  document.getElementById('singan_image').style.opacity = "1";
+                }
+
+                function singan_stop() {
+                  document.getElementById('singan_image').style.opacity = "0";
+                }
+                singan_stop()
+              </script>
             </td>
-            <td style="padding-top:20px;width:60%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:top">
               <a href="https://tamarott.github.io/SinGAN.htm">
                 <papertitle>SinGAN: Learning a generative model from a single natural image</papertitle>
               </a>
@@ -140,19 +160,28 @@
 			  <a href="https://github.com/tamarott/SinGAN">code</a> /
 			  <a href="https://youtu.be/mdAcPe74tZI?t=3191">ICCV talk</a> /
 			  <a href="https://www.youtube.com/watch?v=j9id4UpN9BI">Israel Vision Day talk (recommended)</a>
-              <p></p>
             </td>
           </tr>
 		  
-		  <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+		  <tr onmouseout="dac_stop()" onmouseover="dac_start()">
+            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:middle">
               <div class="one">
-			  <br>
-			  <br>
-                <img src='images/DAC.png' width="130%">
+                <div class="two" id='dac_image'>
+                  <img src='images/dac_after.png' width="160"></div>
+                <img src='images/dac_before.png' width="160">
               </div>
+              <script type="text/javascript">
+                function dac_start() {
+                  document.getElementById('dac_image').style.opacity = "1";
+                }
+
+                function dac_stop() {
+                  document.getElementById('dac_image').style.opacity = "0";
+                }
+                dac_stop()
+              </script>
             </td>
-            <td style="padding-top:20px;width:60%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:top">
               <a href="http://webee.technion.ac.il/people/tomermic/DeformationAwareCompressionWEB/DeformationAwareImageCompression.htm">
                 <papertitle>Deformation Aware image Compression</papertitle>
               </a>
@@ -166,19 +195,16 @@
               <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers_backup/Shaham_Deformation_Aware_Image_CVPR_2018_paper.pdf">paper</a> /
 			  <a href="https://webee.technion.ac.il/people/tomermic/DeformationAwareCompressionWEB/DeformationAwareCompressionCode.zip">code</a> /
 			  <a href="https://youtu.be/giA2rpN3Iv8?t=4060">spotlight</a>
-              <p></p>
             </td>
-          </tr>
+          </tr>	  
 		  
 		  <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:0px;width:25%;vertical-align:middle">
               <div class="one">
-			  <br>
-			  <br>
-                <img src='images/xUnit.png' width="130%">
+			    <img src='images/xUnit.png' width="100%">
               </div>
             </td>
-            <td style="padding-top:20px;width:60%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:20px;width:75%;vertical-align:top">
               <a href="">
                 <papertitle>xUnit: Learning a Spatial Activation Function for Efficient Image Restoration</papertitle>
               </a>
@@ -196,16 +222,23 @@
             </td>
           </tr> 
 		  
-		  <tr>
-            <td style="padding-left:20px;width:25%;vertical-align:middle">
+		  <tr onmouseout="vip_stop()" onmouseover="vip_start()">
+            <td style="padding-left:20px;padding-top:0px;width:25%;vertical-align:middle">
               <div class="one">
-			  <br>
-			  <br>
-			  <img src='images/VIP.png' width="130%">
+                <div class="two" id='vip_image'><video  width=100% muted autoplay loop>
+                <source src="images/vip_after.mp4" type="video/mp4" width="160">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/vip_before.png' width="160">
               </div>
+              <script type="text/javascript">
+                function vip_start() {
+                  document.getElementById('vip_image').style.opacity = "1";
+                }
+                vip_start()
+              </script>
             </td>
-            <td style="padding-top:0px;width:60%;vertical-align:middle">
-			<p style="text-align:left; margin-top: -50px;">
+            <td style="padding-left:20px;padding-top:20px;width:75%;vertical-align:top">
               <a href="https://webee.technion.ac.il/people/tomermic/Visualization/VisualizingImagePriors.htm">
                 <papertitle>Visualizing Image Priors</papertitle>
               </a>
@@ -218,23 +251,17 @@
 			  <a href="https://webee.technion.ac.il/people/tomermic/Visualization/VisualizingImagePriors.htm">project page</a> /
               <a href="https://tomer.net.technion.ac.il/files/2017/08/PriorVisualization.pdf">paper</a> /
 			  <a href="http://www.eccv2016.org/files/posters/P-4B-36.pdf">poster</a>
-			  </p>
             </td>
           </tr>
 		  
 		  <tr>
-            <td style="padding-left:20px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:middle">
               <div class="one">
-				<p style="text-align:left; margin-top:-50px;">
-				<br>
-				<br>
-                <img src='images/GM.png' width="130%">
-				</p>
+				<img src='images/GM.png' width="100%">
               </div>
             </td>
-            <td style="margin-top:0px;width:60%;vertical-align:middle">
-			<p style="text-align:left; margin-top:-50px;">
-              <a href="">
+            <td style="padding-left:20px;padding-top:20px;width:75%;vertical-align:top">
+			  <a href="">
                 <papertitle>Edge Preserving Multi-Modal Registration Based On Gradient Intensity Self-Similarity</papertitle>
               </a>
               <br>
@@ -244,9 +271,8 @@
               <br>
               <em>IEEEI</em>, 2014&nbsp 
               <br>
-              <a href="http://sipl.eelabs.technion.ac.il/wp-content/uploads/sites/6/2016/09/paper14-Edge-Preserving-Multi-Modal-Registration-Based-on-Gradient-Intensity-Self-Similarity.pdf">paper</a> /
-			  </p>
-            </td>
+              <a href="http://sipl.eelabs.technion.ac.il/wp-content/uploads/sites/6/2016/09/paper14-Edge-Preserving-Multi-Modal-Registration-Based-on-Gradient-Intensity-Self-Similarity.pdf">paper</a> 
+			 </td>
           </tr>
 		  
 		  
