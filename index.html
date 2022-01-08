@@ -63,8 +63,14 @@
 			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>		
 			 <tr>
              <td style="padding:20px;width:1000%;vertical-align:top">
+			 <p style="text-align:left;margin-top: -15px;">
+			  <em> [Oct 2021] </em> Our paper <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Jakoel_GANs_Spatial_Control_via_Inference-Time_Adaptive_Normalization_WACV_2022_paper.pdf">GANs Spatial Control via Inference-Time Adaptive Normalization</a> was accepted to WACV
+ 			  </p>
 			  <p style="text-align:left;margin-top: -15px;">
-			  <em> [Jun 2021] </em> Check out our new  <a href="https://arxiv.org/abs/2106.06426">paper</a>  about learning a generative model from a single short audio source
+			  <em> [Sep 2021] </em> Our works on <a href="https://openreview.net/pdf?id=XmHnJsiqw9s">single audio generative model</a> and <a href="https://openreview.net/pdf?id=R6nFQy2vwQq">deep self-dissimilarities</a> were accepted to NeurIPS
+ 			  </p>
+			  <p style="text-align:left;margin-top: -15px;">
+			  <em> [Jun 2021] </em> Check out our new  <a href="https://openreview.net/pdf?id=XmHnJsiqw9s">paper</a>  about learning a generative model from a single short audio source
  			  </p>
 			  <p style="text-align:left;margin-top: -10px;">
 			  <em> [Mar 2021] </em> Our  <a href="https://tamarott.github.io/ASAPNet_web/">ASAPNet paper</a>  was accepted to CVPR
@@ -104,14 +110,49 @@
         </tbody></table>
 		
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		
+		<tr onmouseout="AITN_stop()" onmouseover="AITN_start()">
+            <td style="padding-left:20px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='aitn_image'>
+                  <img src='images/aitn_after.png' width="160"></div>
+                <img src='images/aitn_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function AITN_start() {
+                  document.getElementById('aitn_image').style.opacity = "1";
+                }
+
+                function AITN_stop() {
+                  document.getElementById('aitn_image').style.opacity = "0";
+                }
+                singan_stop()
+              </script>
+            </td>	
+            <td style="padding-left:20px;padding-top:20px;padding-bottom:20px;width:75%;vertical-align:top">
+              <a href="">
+                <papertitle>GANs Spatial Control via Inference-Time Adaptive Normalization</papertitle>
+              </a>
+              <br>
+			  <a href="">Karin Jakoel*</a>,
+			  <a href="">Liron Efraim*</a>,
+			  <strong>Tamar Rott Shaham</strong>
+              <br>
+              <em>WACV</em>, 2022
+              <br>
+			  <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Jakoel_GANs_Spatial_Control_via_Inference-Time_Adaptive_Normalization_WACV_2022_paper.pdf">paper</a> /
+              <a href="https://openaccess.thecvf.com/content/WACV2022/supplemental/Jakoel_GANs_Spatial_Control_WACV_2022_supplemental.pdf">supplementals</a>
+            </td>
+        </tr>
+		
 		<tr>
-            <td style="padding-left:20px;padding-top:50px;padding-bottom:0px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:10px;padding-bottom:10px;width:25%;vertical-align:middle">
               <div class="one">
 			    <img src='images/CAW.png' width="100%">
               </div>
             </td>
-            <td style="padding-left:20px;width:75%;vertical-align:middle">
-              <a href="">
+            <td style="padding-left:20px;padding-top:20px;padding-bottom:10px;width:25%;vertical-align:top">
+              <a href="https://galgreshler.github.io/Catch-A-Waveform/">
                 <papertitle>Catch-A-Waveform: Learning to Generate Audio from a Single Short Example</papertitle>
               </a>
               <br>
@@ -119,15 +160,40 @@
 			  <strong>Tamar Rott Shaham</strong>, 
               <a href="https://tomer.net.technion.ac.il/">Tomer Michaeli</a>
               <br>
-              <em>Arxiv</em>, 2021
+              <em>NeurIPS</em>, 2021
               <br>
-			  <a href="https://arxiv.org/pdf/2106.06426.pdf">arXiv</a> /
-              <a href="https://anonymous.4open.science/w/Catch-A-Waveform/">supplementals</a>
+			  <a href="https://openreview.net/pdf?id=XmHnJsiqw9s">paper</a> /
+			  <a href="https://galgreshler.github.io/Catch-A-Waveform/">web</a> /
+			  <a href="https://github.com/galgreshler/Catch-A-Waveform">code</a> /
+              <a href="https://openreview.net/attachment?id=XmHnJsiqw9s&name=supplementary_material">supplementals</a>
+            </td>
+        </tr>
+		
+		<tr>
+            <td style="padding-left:20px;padding-top:0px;padding-bottom:20px;width:25%;vertical-align:middle">
+              <div class="one">
+			    <img src='images/dsd.png' width="100%">
+              </div>
+            </td>
+            <td style="padding-left:20px;width:75%;vertical-align:top">
+              <a href="">
+                <papertitle>Deep Self-Dissimilarities as Powerful Visual Fingerprints</papertitle>
+              </a>
+              <br>
+			  <a href="">Idan Kligvasser</a>,
+			  <strong>Tamar Rott Shaham</strong>, 
+			  <a href="https://sites.google.com/view/yuval-bahat/home">Yuval Bahat</a>,
+              <a href="https://tomer.net.technion.ac.il/">Tomer Michaeli</a>
+              <br>
+              <em>NeurIPS</em>, 2021 <br> <font color=#ED8200><strong>Spotlight presentation</strong></font>
+              <br>
+			  <a href="https://openreview.net/pdf?id=R6nFQy2vwQq">paper</a> /
+              <a href="https://openreview.net/attachment?id=R6nFQy2vwQq&name=supplementary_material">supplementals</a>
             </td>
           </tr>
 		
           <tr onmouseout="asap_stop()" onmouseover="asap_start()">
-            <td style="padding-left:20px;padding-top:0px;padding-bottom:20px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:20px;padding-bottom:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='asap_image'>
                   <img src='images/asap_after.png' width="160"></div>
@@ -202,7 +268,7 @@
           </tr>
 		  
 		  <tr onmouseout="dac_stop()" onmouseover="dac_start()">
-            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:0px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dac_image'>
                   <img src='images/dac_after.png' width="160"></div>
@@ -219,7 +285,7 @@
                 dac_stop()
               </script>
             </td>
-            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:top">
+            <td style="padding-left:20px;padding-top:0px;width:25%;vertical-align:top">
               <a href="http://webee.technion.ac.il/people/tomermic/DeformationAwareCompressionWEB/DeformationAwareImageCompression.htm">
                 <papertitle>Deformation Aware image Compression</papertitle>
               </a>
@@ -293,12 +359,12 @@
           </tr>
 		  
 		  <tr>
-            <td style="padding-left:20px;padding-top:20px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:40px;width:25%;vertical-align:middle">
               <div class="one">
 				<img src='images/GM.png' width="100%">
               </div>
             </td>
-            <td style="padding-left:20px;padding-top:20px;width:75%;vertical-align:top">
+            <td style="padding-left:20px;padding-top:40px;width:75%;vertical-align:top">
 			  <a href="">
                 <papertitle>Edge Preserving Multi-Modal Registration Based On Gradient Intensity Self-Similarity</papertitle>
               </a>
