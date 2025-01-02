@@ -129,3 +129,22 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    max-width: none;
+  }
+  td {
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    font-size: 14px;
+  }
+}
