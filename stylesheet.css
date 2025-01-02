@@ -153,6 +153,13 @@ span.highlight {
   }
 }
 
+/* Specific override for the no-responsive class */
+img.no-responsive {
+  width: 3%; /* Or specify a fixed width, e.g., 200px */
+  max-width: none;
+  height: auto;
+}
+
 .responsive-table {
   width: 100%;
   max-width: 1000px;
