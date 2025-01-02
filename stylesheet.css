@@ -147,3 +147,12 @@ span.highlight {
     font-size: 14px;
   }
 }
+
+.responsive-table {
+  width: 100%;
+  max-width: 1000px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 0 auto;
+}

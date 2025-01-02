@@ -50,7 +50,14 @@
               </p>
             </td>
             <td style="padding:2.5%;width:27%;max-width:40%">
-			  <img style="width:100%;max-width:100%" alt="profile photo" src="images/TamarRottShaham.jpg" class="hoverZoomLink" ></a>
+              <img 
+              src="images/TamarRottShaham.jpg" 
+              srcset="images/TamarRottShaham_small.jpg 480w, images/TamarRottShaham.jpg 1024w" 
+              sizes="(max-width: 768px) 100vw, 50vw" 
+              alt="profile photo" 
+              loading="lazy" 
+              style="width:100%;max-width:100%;height:auto;">
+            </a>
             </td>
           </tr>
         </tbody></table>
@@ -141,12 +148,12 @@
           </tr>
         </tbody></table>
 		
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="responsive-table">
           <tr>
-            <td style="padding-left:20px;padding-top:10px;padding-bottom:50px;width:50%;vertical-align:top">
+            <td style="padding-left:20px;padding-top:10px;padding-bottom:50px;width:35%;vertical-align:top">
               <div class="one">
                 <video  width=200% muted autoplay loop>
-                  <source src="./images/SketchAgent_web.mp4" type="video/mp4">
+                  <source src="./images/SketchAgent_web.mp4" type="video/mp4" loading="lazy">
                   Your browser does not support the video tag.
                 </video>
 		            <!-- <img src='https://yael-vinker.github.io/sketch-agent/static/SketchAgent.mp4' width="200%"> -->
@@ -176,7 +183,7 @@
           <tr>
             <td style="padding-left:20px;padding-top:10px;padding-bottom:50px;width:35%;height:256px;vertical-align:top">
               <div class="one">
-		            <img src='./images/maia_teaser_web.png' width="200%">
+		            <img src='./images/maia_teaser_web.png' width="200%" loading="lazy">
               </div>
             </td>
             <td style="padding-left:20px;padding-top:20px;padding-bottom:10px;width:25%;vertical-align:top">
